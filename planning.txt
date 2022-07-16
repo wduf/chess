@@ -1,0 +1,24 @@
+CLASSES:
+board
+square
+piece (parent)
+	children: pawn, knight, bishop, rook, queen, king
+
+DISTRIBUTION:
+board:
+- Square** squares
+- initBoard()
+- printBoard()
+- printCoords()
+- checkCheck()
+- checkMate() (if checkCheck() true)
+- makeMove()
+- checkPromote()
+square:
+- int row
+- int col
+- bool color
+- getPiece()
+- setPiece()
+piece (all children diff)
+- legalMove()  // check if input is a legal move for this piece
