@@ -6,8 +6,7 @@
 class Board
 {
 	private:
-	int rows;
-	int cols;
+	int rows = 8;
 	Square** squares;
 	
 	public:
