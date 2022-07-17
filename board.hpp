@@ -6,6 +6,8 @@
 class Board
 {
 	private:
+	int rows;
+	int cols;
 	Square** squares;
 	public:
 	Board();
