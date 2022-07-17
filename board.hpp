@@ -9,6 +9,7 @@ class Board
 	int rows;
 	int cols;
 	Square** squares;
+	
 	public:
 	Board();
 	void initBoard();
