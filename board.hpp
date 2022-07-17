@@ -10,7 +10,7 @@ class Board
 	Square** squares;
 	
 	public:
-	Board();
+	Board(Square**);
 	void initBoard();
 	void printBoard();
 	void printCoords();
